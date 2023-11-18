@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.1)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1 {
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+}
+
+.circle2 {
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #ff00cc;
+    background: -webkit-linear-gradient(
+        to right,
+        #333399,
+        #ff00cc
+    );
+    background: linear-gradient(
+        to right,
+        #333399,
+        #ff00cc
+    ); 
+}
+.section{ 
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    width: 20%;
+    height: 60%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.question{
+   font-size:30px ;
+    margin-top: 0;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem ;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-evenly;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #b9b9b9;
+    margin: 5px 0;
+   
+    line-height: 40px;
+    font-family: 'lato',sans-serif;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+}
+button{
+   height: 50px;
+   width: 150px;
+   border-radius: 28px;
+   border-style: none;
+   backdrop-filter: blur(15px);
+   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+   background: linear-gradient(
+        to left,
+        #333399,
+        #ff00cc
+    );
+    color: aliceblue;
+    font-size: 20px;
+    
+}
